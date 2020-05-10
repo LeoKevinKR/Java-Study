@@ -11,14 +11,18 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/hello")
 public class HelloWorldServlet extends HttpServlet {
-	
+
+	public HelloWorldServlet() {
+		System.out.println("HelloWorldServlet()");
+	}
+
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		
+
 		String name = req.getParameter("name");
-		
-		PrintWriter out =  resp.getWriter();
-		out.print(name+" Hello World!");
+
+		PrintWriter out = resp.getWriter();
+		out.print(name + " Hello World from doGet");
 	}
 
 }

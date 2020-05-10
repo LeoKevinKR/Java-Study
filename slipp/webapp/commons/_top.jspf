@@ -1,0 +1,9 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<ul>
+	<li><a href="/">home</a></li>
+	<li><a href="/">로그인</a></li>
+	<li><a href="/form.jsp">회원가입</a></li>
+	<li><a href="/">로그아웃</a></li>
+	<li><a href="/">개인정보수정</a></li>
+</ul>
